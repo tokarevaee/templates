@@ -1,0 +1,18 @@
+.header__wrap {
+    padding-top: 40px;
+    padding-bottom: 37px;
+    display: flex;
+    align-items: center;
+
+    @media screen and (max-width: $tabletWidth) {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        flex-direction: column;
+    }
+}
+
+.header__logo {
+    @media screen and (max-width: $phoneWidth) {
+        max-width: 100px;
+    }
+}

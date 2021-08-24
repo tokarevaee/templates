@@ -1,0 +1,159 @@
+@import './libs/libs';
+@import './fonts/fonts.scss';
+
+html {
+  height: 100%;
+  font-size: 16px;
+  line-height: 140%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  display: flex;
+  background-color: #000c42;
+  flex-direction: column;
+  color: $white;
+  font-family: 'Museo-Sans', sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  max-width: $maxWidth;
+  padding: 0 $defaultPadding;
+}
+
+
+.button {
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  line-height: 100%;
+  font-size: 14px;
+  padding: 13px 16px;
+  text-transform: uppercase;
+  font-weight: 900;
+  border-radius: 2px;
+  letter-spacing: 1.5px;
+  background-color: transparent;
+  cursor: pointer;
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: .7;
+    border: none;
+  }
+
+  span {
+    position: relative;
+    z-index: 3;
+  }
+
+  @media screen and (max-width: $tabletWidth) {
+    font-size: 12px;
+  }
+
+  @media screen and (max-width: $phoneWidth) {
+    padding: 8px 16px;
+    letter-spacing: 1px;
+  }
+
+  &_primary {
+    color: $primary;
+    box-shadow: inset 0 0 0 2px $primary;
+    transition: .275s ease-in-out;
+
+    &:focus:not(:disabled),
+    &:hover:not(:disabled) {
+      transition: .275s ease-in-out;
+      color: $white;
+      box-shadow: inset 0 0 0 2px $white;
+    }
+  }
+
+  &_secondary {
+    will-change: background-color;
+    background-color: $secondary;
+    color: $darkblue;
+    padding: 13px 26px;
+    transition: .275s ease-in-out background-color;
+
+    @media screen and (max-width: $phoneWidth) {
+      padding: 8px 16px;
+      letter-spacing: 1px;
+    }
+
+    &:focus:not(:disabled),
+    &:hover:not(:disabled) {
+      transition: .275s ease-in-out;
+      background-color: $white;
+    }
+  }
+
+  &_accent {
+    will-change: opacity;
+    background-color: $accent;
+    color: $white;
+    padding: 13px 30px;
+    transition: .275s ease-in-out;
+    opacity: 1;
+
+    @media screen and (max-width: $phoneWidth) {
+      padding: 8px 16px;
+      letter-spacing: 1px;
+    }
+
+    &:focus:not(:disabled),
+    &:hover:not(:disabled) {
+      transition: .275s ease-in-out;
+      opacity: .7;
+    }
+  }
+}
+
+.title {
+  position: relative;
+  z-index: 20;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 36px;
+  line-height: 100%;
+  font-weight: 900;
+  letter-spacing: 6px;
+  color: $secondary;
+
+  @media screen and (max-width: $tabletWidth) {
+    letter-spacing: 3px;
+    font-size: 24px;
+    line-height: 140%;
+  }
+
+  @media screen and (max-width: $phoneWidth) {
+    letter-spacing: 2px;
+    font-size: 20px;
+  }
+}
+
+.sp-form-outer {
+  display: none !important;
+}

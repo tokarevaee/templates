@@ -1,0 +1,57 @@
+
+@font-face {
+  font-family: "MuseoSans";
+  src: local('../fonts/Gilroy Light'),
+  local('../fonts/Gilroy-Light'),
+  url('../fonts/Gilroylight.woff2') format('woff2'),
+  url('../fonts/Gilroylight.woff') format('woff'),
+  url('../fonts/Gilroy-Light.eot'),
+  url('../fonts/Gilroylight.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "MuseoSans";
+  src: local('../fonts/Gilroy ExtraBold'),
+  local('../fonts/Gilroy-ExtraBold'),
+  url('../fonts/Gilroyextrabold.woff2') format('woff2'),
+  url('../fonts/Gilroyextrabold.woff') format('woff'),
+  url('../fonts/Gilroy-ExtraBold.eot'),
+  url('../fonts/Gilroyextrabold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+  font-family: $family;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 500;
+  font-style: normal;
+  overflow: hidden;
+  line-height: 1.5;
+  background: #150041 linear-gradient(90deg, rgba(19, 0, 42, 1) 0%, rgba(22, 1, 71, 1) 50%, rgba(19, 0, 42, 1) 100%);
+  transition: all 1s;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+}
+

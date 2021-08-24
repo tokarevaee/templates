@@ -1,0 +1,28 @@
+.footer__privacy {
+    display: flex;
+    align-items: flex-start;
+
+    a {
+        will-change: color;
+        text-transform: uppercase;
+        font-size: 1rem;
+        line-height: 100%;
+        font-weight: 900;
+        color: $secondary;
+        transition: .275s ease-in-out color;
+
+        &:first-of-type {
+            margin-right: 60px;
+        }
+
+        &:hover,
+        &:focus {
+            transition: .275s ease-in-out color;
+            color: $primary;
+        }
+
+        @media screen and (max-width: $phoneWidth) {
+            font-size: 10px;
+        }
+    }
+}

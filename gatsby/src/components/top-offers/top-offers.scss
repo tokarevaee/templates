@@ -1,0 +1,37 @@
+.top-offers {
+    position: relative;
+    z-index: 2;
+}
+
+.top-offers__wrap {
+    padding-top: 95px;
+    padding-bottom: 135px;
+
+    @media screen and (max-width: $tabletWidth) {
+        padding-top: 60px;
+        padding-bottom: 80px;
+    }
+}
+
+.top-offers__title {
+    margin-bottom: 75px;
+}
+
+.top-offers__subtitle {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 70px;
+}
+
+.top-offers__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 23px;
+    grid-row-gap: 32px;
+
+    @media screen and (max-width: $smDesktopWidth) {
+        grid-template-columns: repeat(auto-fill, minmax(280px, 375px));
+        justify-content: space-around;
+    }
+}

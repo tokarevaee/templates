@@ -1,0 +1,28 @@
+$borderWidth: 5px;
+.aside {
+    @media screen and (max-width: $tabletWidth) {
+        order: -1;
+    }
+}
+
+.sidebar {
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 0 auto;
+    min-height: 462px;
+    max-width: 307px;
+    position: relative;
+    z-index: 10;
+}
+
+.sidebar__border {
+    position: absolute;
+    pointer-events: none;
+    z-index: -200;
+    top: -$borderWidth;
+    bottom: -$borderWidth;
+    left: -$borderWidth;
+    right: -$borderWidth;
+    border-radius: 3px;
+    background: linear-gradient(330deg, $secondary, $primary);
+}

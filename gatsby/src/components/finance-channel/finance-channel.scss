@@ -1,0 +1,37 @@
+.finance-channel {
+    will-change: opacity;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 10px 20px;
+    padding-left: 35px;
+    line-height: 20px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: $white;
+    font-weight: 900;
+    text-transform: uppercase;
+    background-color: $blue;
+    border-radius: 3px;
+    opacity: 1;
+    transition: .275s ease-in-out opacity;
+
+    &:hover,
+    &:focus {
+        transition: .275s ease-in-out opacity;
+        opacity: .7;
+    }
+
+    @media screen and (max-width: $tabletWidth) {
+        margin-bottom: 50px;
+        padding-left: 15px;
+    }
+}
+
+.finance-channel__icon {
+    margin-right: 10px;
+    width: 50px;
+    height: 40px;
+    fill: $white
+}

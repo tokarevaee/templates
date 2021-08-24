@@ -1,0 +1,85 @@
+.offers {
+    position: relative;
+    display: grid;
+    width: 100%;
+    grid-row-gap: 3px;
+
+    @media screen and (max-width: $phoneWidth) {
+        grid-row-gap: 5px;
+    }
+}
+
+.offers-tabs {
+    border: none;
+    margin: 0;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+
+    .react-tabs__tab {
+        display: inline-flex;
+        align-items: center;
+        position: static;
+        font-weight: 900;
+        border-radius: 3px;
+        letter-spacing: 1.5px;
+        bottom: 0;
+        border: none;
+        padding: 0;
+        margin-right: 49px;
+        text-transform: uppercase;
+        color: $primary;
+        transition: .275s ease-in-out;
+
+        @media screen and (max-width: $tabletWidth) {
+            font-size: 14px;
+            margin-right: 30px;
+
+            svg {
+                width: 14px;
+                height: 14px;
+            }
+        }
+
+        svg {
+            margin-right: 7px;
+            transition: .275s ease-in-out;
+            width: 16px;
+            height: 16px;
+            fill: $primary
+        }
+
+        &:hover {
+            transition: .275s ease-in-out;
+            opacity: .7;
+        }
+
+        &:last-of-type {
+            margin-right: 0;
+        }
+
+        &--selected {
+            transition: .275s ease-in-out;
+            background-color: transparent;
+            color: $secondary;
+            bottom: 0;
+            border: none;
+            &:hover {
+                opacity: 1;
+            }
+
+            svg {
+                transition: .275s ease-in-out;
+                fill: $secondary;
+            }
+        }
+    }
+}
+
+.offers__column-container {
+    padding-top: 10px;
+}
+
+.offers__banner {
+    display: block;
+    margin-bottom: 24px;
+}

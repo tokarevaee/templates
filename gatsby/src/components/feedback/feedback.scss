@@ -1,0 +1,67 @@
+.feedback {
+    background-image: linear-gradient(180deg, #290773, $primary);
+    border-radius: 2px;
+
+    &:hover {
+        .feedback__title span {
+            transform: rotateY(-360deg);
+        }
+    }
+
+    .lds-roller {
+        margin: 40px auto;
+    }
+}
+
+.feedback__inner {
+    padding: 40px 26px;
+    padding-bottom: 32px;
+}
+
+.feedback__title {
+    font-size: 20px;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
+    color: $yellow;
+    margin-bottom: 40px;
+    line-height:1;
+
+
+    span {
+        display: inline-block;
+        transform: rotateY(0);
+        transition: .575s ease-in-out transform;
+    }
+}
+
+.feedback__message {
+    width: 100%;
+    padding: 10px 16px;
+    background-color: transparent;
+    color: $white;
+    border: 2px solid $primary;
+    border-radius: 2px;
+    margin-bottom: 12px;
+}
+
+.feedback__message::placeholder {
+    color: $primary;
+    font-weight: 100;
+    font-size: 12px;
+}
+
+.feedback__button {
+    color: $white;
+    width: 100%;
+    background-color: $primary;
+    margin-bottom: 32px;
+}
+
+.feedback__extra {
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 15px;
+    text-align: center;
+    letter-spacing: 0.3px;
+}

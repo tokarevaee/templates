@@ -1,0 +1,44 @@
+.offers__tabpanel-content {
+    padding-left: 90px;
+    font-weight: 100;
+    font-size: 13px;
+    line-height: 120%;
+
+    p {
+        display: inline-block;
+        margin-bottom: 15px;
+    }
+
+    @media screen and (max-width: $smDesktopWidth) {
+        padding-top: 30px;
+    }
+
+    @media screen and (max-width: $phoneWidth) {
+        padding: 0;
+        padding-top: 20px;
+    }
+}
+
+.offers__tabpanel-close {
+    color: $secondary;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.offers__tabpanel-desc {
+    margin-bottom: 15px;
+
+    ul {
+        padding-left: 16px;
+    }
+
+    li {
+        list-style: square;
+        margin-bottom: 4px;
+    }
+
+    p {
+        margin-bottom: 10px;
+    }
+}

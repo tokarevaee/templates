@@ -1,0 +1,36 @@
+.social__link {
+    svg {
+        width: 20px;
+        height: 20px;
+        fill: $white;
+        transition: .275s ease-in-out;
+    }
+
+    &:hover {
+        svg {
+            fill: $primary;
+            transition: .275s ease-in-out;
+        }
+    }
+
+    &_vkontakte {
+        svg {
+            width: 24px;
+            height: 24px;
+        }
+    }
+
+    &_facebook {
+        svg {
+            width: 16px;
+            height: 16px;
+        }
+    }
+
+    &_youtube {
+        svg {
+            width: 24px;
+            height: 24px;
+        }
+    }
+}

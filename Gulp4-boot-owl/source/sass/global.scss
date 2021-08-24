@@ -1,0 +1,116 @@
+@font-face {
+  font-family: "GothamPro";
+  src: url("../fonts/GothamPro-Bold.woff2") format("woff2"), /* chrome、firefox */
+  url("../fonts/GothamPro-Bold.woff") format("woff"); /* chrome、firefox */
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "GothamPro";
+  src: url("../fonts/GothamPro-Black.woff2") format("woff2"), /* chrome、firefox */
+  url("../fonts/GothamPro-Black.woff") format("woff"); /* chrome、firefox */
+  font-weight: 900;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "GothamPro";
+  src: url("../fonts/GothamPro.woff2") format("woff2"), /* chrome、firefox */
+  url("../fonts/GothamPro.woff") format("woff"); /* chrome、firefox */
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "GothamPro";
+  src: url("../fonts/GothamPro-Medium.woff2") format("woff2"), /* chrome、firefox */
+url("../fonts/GothamPro-Medium.woff") format("woff"); /* chrome、firefox */
+font-weight: 500;
+  font-display: swap;
+}
+
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  font-family: $family;
+  color: #66697d;
+  font-size: 22px;
+  font-weight: 500;
+  font-style: normal;
+  overflow: hidden;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+}
+
+.z-20 {
+  z-index: 20;
+}
+
+
+a.section__telega {
+  bottom: 2%;
+  right: 2%;
+  position: fixed;
+  z-index: 30;
+  @media (max-width: 678px) {
+    transform: scale(0.8);
+  }
+}
+
+.title {
+  font-family: "Garamond", "Arial", sans-serif;
+  font-size: 42px;
+  color: #000524;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin-bottom: 35px;
+
+  @media (max-width: 678px) {
+    font-size: 36px;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+}
+
+.text {
+  margin-top: 35px;
+  color: #66697d;
+  font-size: 22px;
+  line-height: 35px;
+  font-weight: 500;
+
+  @media (max-width: 678px) {
+    //font-size: 36px;
+    //margin-bottom: 40px;
+  }
+
+  &:first-letter {
+    float: left;
+    font-weight: 500;
+    font-size: 75px;
+    line-height: 1;
+    background: linear-gradient(#926942, #be9467, #926942);
+    -webkit-background-clip: text;
+    color: transparent;
+    text-transform: uppercase;
+    padding-right: 20px;
+    padding-bottom: 5px;
+    margin-bottom: -10px;
+  }
+}

@@ -1,0 +1,23 @@
+.header__title {
+    font-size: 24px;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-left: 35px;
+    margin-right: 10px;
+    background: -webkit-linear-gradient(90deg, #02eaff, #ffffff);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    @media screen and (max-width: $smDesktopWidth) {
+        font-size: 18px;
+        margin-left: 15px;
+    }
+
+    @media screen and (max-width: $tabletWidth) {
+        font-size: 16px;
+        margin: 0;
+        padding: 12px;
+        padding-bottom: 18px;
+        text-align: center;
+    }
+}

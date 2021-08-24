@@ -1,0 +1,52 @@
+$openOfferBg: #310e65;
+$closeOfferBg: #280758;
+
+
+// ------Reset default styles------
+.accordion {
+    border: none;
+}
+
+.accordion__button {
+    padding: 0;
+    background-color: transparent;
+
+    &:hover {
+        background-color: transparent;
+    }
+
+    &::before {
+        display: none;
+    }
+}
+
+.accordion__panel {
+    padding: 0;
+}
+// ------Reset default styles------
+
+.offers__tabpanel {
+    border-radius: 3px;
+    background-color: $closeOfferBg;
+
+    &_open {
+        background-color: $openOfferBg;
+    }
+}
+
+.offers__tabpanel-top {
+    background-color: transparent;
+    color: $white;
+
+    &:hover {
+        background-color: transparent;
+    }
+}
+
+.offers__tabpanel-inner {
+    padding: 20px 18px;
+
+    @media screen and (max-width: $phoneWidth) {
+        padding: 16px 12px;
+    }
+}

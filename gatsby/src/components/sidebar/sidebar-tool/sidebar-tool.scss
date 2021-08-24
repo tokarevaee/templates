@@ -1,0 +1,115 @@
+.sidebar.sidebar_tool {
+    margin-bottom: 20px;
+    .sidebar__inner {
+        position: relative;
+        z-index: 10;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 35px;
+        padding-bottom: 50px;
+        padding-top: 60px;
+    }
+
+    .sidebar__title {
+        position: relative;
+        font-size: 40px;
+        color: $accent;
+        font-weight: 900;
+        line-height: 48px;
+        padding-bottom: 70px;
+        background: -webkit-linear-gradient(135deg, #3c56ff 0%, #04126b 55%);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: 35px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 81px;
+            height: 2px;
+            background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFEAAAACCAYAAAAglTBvAAAAZElEQVQoke2OSwqAMAxEn1q1gjfwsB5ba/1tUhwCblw78JghpZNU4zQHIACt0AG9eBSPwODy4Ob6Hl2H9urOckdjVEDNows4jcPYjWxsQjJfLSfLnuVlvrq/SToLGch65K+PugGyHCe26DSctQAAAABJRU5ErkJggg==');
+            background-position: center;
+            background-size: contain;
+        }
+    }
+
+    .sidebar__photo {
+        margin-bottom: 3px;
+    }
+
+    .sidebar__contact-name {
+        color: $accent;
+        text-transform: uppercase;
+        font-size: 16px;
+        font-weight: 700;
+    }
+
+    .sidebar__link {
+        color: $accent;
+        display: flex;
+        align-items: center;
+        position: relative;
+        margin-bottom: 15px;
+        z-index: 1;
+        font-weight: 700;
+
+        svg {
+            fill: $accent;
+            width: 15px;
+            height: 15px;
+            margin-right: 5px;
+        }
+    }
+
+    .sidebar__text {
+        font-weight: 900;
+        text-transform: uppercase;
+        font-size: 14px;
+        line-height: 27px;
+        margin-bottom: 50px;
+        color: $accent;
+        max-width: 215px;
+    }
+
+    .sidebar__button {
+        position: relative;
+        color: $white;
+        border-radius: 2px;
+        overflow: hidden;
+        padding: 13px 24px;
+
+        &::before,
+        &::after {
+            content: '';
+            position: absolute;
+            pointer-events: none;
+            width: 100%;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            transition: 0.275s ease-in-out;
+        }
+
+        &::before {
+            opacity: 1;
+            background-image: linear-gradient(to top, #3c56ff, #020f65);
+        }
+
+        &::after {
+            opacity: 0;
+            background-image: linear-gradient(to bottom, #3c56ff, #020f65);
+        }
+
+        &:focus,
+        &:hover {
+            &::after {
+                opacity: 1;
+            }
+        }
+    }
+}

@@ -1,0 +1,136 @@
+.offers__tabpanel-header {
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+
+    @media screen and (max-width: $phoneWidth) {
+        flex-direction: column;
+    }
+}
+
+.offers__tabpanel-img {
+    display: block;
+    width: 65px;
+    height: 65px;
+    object-fit: contain;
+    @media screen and (max-width: $phoneWidth) {
+        margin-bottom: 10px;
+    }
+}
+
+
+.offers__tabpanel-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: $white;
+    font-weight: 700;
+    font-size: 1rem;
+    flex-grow: 1;
+    padding-left: 25px;
+    @media screen and (max-width: $smDesktopWidth) {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    @media screen and (max-width: $phoneWidth) {
+        width: 100%;
+        padding: 0;
+        flex-grow: 0;
+    }
+}
+
+.offers__tabpanel-name {
+    font-weight: 700;
+    margin-right: 10px;
+    min-width: 150px;
+    @media screen and (max-width: $smDesktopWidth) {
+        margin-bottom: 15px;
+        min-width: initial;
+        @media screen and (max-width: $phoneWidth) {
+            margin-right: 0;
+            align-self: center;
+        }
+    }
+}
+
+.offers__tabpanel-meta {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-left: 20%;
+    @media screen and (max-width: $desktopWidth) {
+        margin-left: 5%;
+    }
+    @media screen and (max-width: $smDesktopWidth) {
+        margin-left: 0;
+        margin-bottom: 15px;
+    }
+    @media screen and (max-width: $phoneWidth) {
+        justify-content: space-between;
+    }
+}
+
+.offers__tabpanel-payout,
+.offers__tabpanel-label {
+    flex-grow: 1;
+
+    @media screen and (max-width: $desktopWidth) {
+        text-align: center;
+    }
+    @media screen and (max-width: $phoneWidth) {
+        flex-grow: 0;
+    }
+}
+
+.offers__tabpanel-payout {
+    padding-right: 8px;
+    margin-left: 10%;
+    @media screen and (max-width: $desktopWidth) {
+        margin-left: 0;
+        padding-right: 0;
+    }
+}
+
+.offers__tabpanel-label {
+    margin-left: auto;
+    padding-right: 5%;
+    @media screen and (max-width: $desktopWidth) {
+        margin-left: 0;
+        padding-right: 0;
+    }
+}
+
+.offers__tabpanel-countries {
+    display: grid;
+    min-width: 110px;
+    max-width: 200px;
+    grid-template-columns: repeat(auto-fit, 50px);
+    grid-gap: 5px;
+}
+
+.offers__tabpanel-country {
+    display: inline-flex;
+    align-items: baseline;
+
+    span {
+        display: flex;
+        background-size: cover;
+        border-radius: 3px;
+        margin-right: 5px;
+        width: 21px;
+        height: 14px;
+        border: 1px solid $white;
+    }
+}
+
+.offers__button {
+    font-size: 10px;
+    font-weight: 700;
+    padding: 10px 15px;
+    letter-spacing: 1px;
+    margin-left: 10px;
+    @media screen and (max-width: $smDesktopWidth) {
+        margin: 0 auto;
+    }
+}

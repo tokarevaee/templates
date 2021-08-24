@@ -1,0 +1,38 @@
+.header__panel {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    @media screen and (max-width: $tabletWidth) {
+        margin: 0 auto;
+    }
+}
+
+.header__lang {
+    will-change: color;
+    border: none;
+    color: $secondary;
+    background-color: transparent;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: $primary;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: 0.275s ease-in-out color;
+
+    &:hover,
+    &:active {
+        transition: 0.275s ease-in-out color;
+        color: $white;
+    }
+
+    @media screen and (max-width: $phoneWidth) {
+        font-size: 12px;
+    }
+}
+
+.header__register {
+    margin-right: 10px;
+    @media screen and (max-width: $phoneWidth) {
+        margin-left: auto;
+    }
+}

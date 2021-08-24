@@ -1,0 +1,29 @@
+.bordered-logo {
+    position: relative;
+    padding-left: 15px;
+    border-radius: 3px;
+    margin-right: 10px;
+    overflow: hidden;
+    @media screen and (max-width: $tabletWidth) {
+        max-width: 260px;
+        margin: 0 auto;
+        padding-left: 0;
+        margin-top: 40px;
+    }
+}
+
+.bordered-logo__border {
+    border: 5px solid $primary;
+    border-image-source: linear-gradient(330deg, $primary, $secondary);
+    border-image-slice: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 40px 20px;
+
+    img {
+        width: 185px;
+    }
+}

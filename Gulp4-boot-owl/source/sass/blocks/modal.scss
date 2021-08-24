@@ -1,0 +1,50 @@
+/* Окно */
+
+.overlay_popup {
+  display:none;
+  position:fixed;
+  z-index: 99;
+  top:0;
+  right:0;
+  left:0;
+  bottom:0;
+  background:#000;
+  opacity:0.5;
+  //overflow-y: scroll;
+}
+
+.popup-play, .popup {
+  display: none;
+  position: fixed;
+  overflow-y: auto;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 200;
+}
+
+.popup-play {
+  min-width: 320px;
+  @media (min-width: 576px) {
+    min-width: 560px;
+  }
+  @media (min-width: 768px) {
+    min-width: 760px;
+  }
+}
+
+.popup-play--wrapper {
+  position:relative;
+  padding-bottom:56.25%;
+  padding-top:30px;
+  height:0;
+  overflow:hidden;
+
+  & iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
